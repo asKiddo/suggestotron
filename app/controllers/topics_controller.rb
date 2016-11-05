@@ -72,7 +72,10 @@ class TopicsController < ApplicationController
 	@topic.votes.first.destroy if @topic.votes.count > 0
 	redirect_to(topics_path)
   end
-
+  
+  def about
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_topic
